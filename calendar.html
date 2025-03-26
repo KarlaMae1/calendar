@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.month {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    background: #98bbf5;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th {
+    background: #1c304f;
+    color: white;
+}
+
+td {
+    background: #f9f9f9;
+}
+
+td:hover {
+    background: #ddd;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .calendar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .calendar {
+        grid-template-columns: 1fr;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <h1>2025 Calendar</h1>
+    <div class="calendar">
+        <div class="month">
+            <h2>January</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td> 
+                        <td></td> 
+                        <td></td> 
+                        <td>1</td> 
+                        <td>2</td>
+                        <td>3</td> 
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td> 
+                        <td>6</td> 
+                        <td>7</td> 
+                        <td>8</td> 
+                        <td>9</td> 
+                        <td>10</td> 
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>12</td> 
+                        <td>13</td> 
+                        <td>14</td> 
+                        <td>15</td> 
+                        <td>16</td> 
+                        <td>17</td> 
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td> 
+                        <td>20</td> 
+                        <td>21</td> 
+                        <td>22</td> 
+                        <td>23</td> 
+                        <td>24</td> 
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td> 
+                        <td>27</td> 
+                        <td>28</td> 
+                        <td>29</td> 
+                        <td>30</td> 
+                        <td>31</td> 
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+        <div class="calendar">
+            <div class="month">
+                <h2>February</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td> 
+                            <td>3</td> 
+                            <td>4</td> 
+                            <td>5</td> 
+                            <td>6</td> 
+                            <td>7</td> 
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>9</td> 
+                            <td>10</td> 
+                            <td>11</td> 
+                            <td>12</td> 
+                            <td>13</td> 
+                            <td>14</td> 
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>16</td> 
+                            <td>17</td> 
+                            <td>18</td> 
+                            <td>19</td> 
+                            <td>20</td> 
+                            <td>21</td> 
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>23</td> 
+                            <td>24</td> 
+                            <td>25</td> 
+                            <td>26</td> 
+                            <td>27</td> 
+                            <td>28</td> 
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+        <div class="calendar">
+            <div class="month">
+                <h2>March</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td> 
+                            <td>3</td> 
+                            <td>4</td> 
+                            <td>5</td> 
+                            <td>6</td> 
+                            <td>7</td> 
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>9</td> 
+                            <td>10</td> 
+                            <td>11</td> 
+                            <td>12</td> 
+                            <td>13</td> 
+                            <td>14</td> 
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>16</td> 
+                            <td>17</td> 
+                            <td>18</td> 
+                            <td>19</td> 
+                            <td>20</td> 
+                            <td>21</td> 
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>23</td> 
+                            <td>24</td> 
+                            <td>25</td> 
+                            <td>26</td> 
+                            <td>27</td> 
+                            <td>28</td> 
+                            <td>29</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>31</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                         </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="calendar">
+        <div class="month">
+            <h2>April</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td> 
+                        <td>1</td> 
+                        <td>2</td> 
+                        <td>3</td> 
+                        <td>4</td> 
+                        <td>5</td> 
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td> 
+                        <td>8</td> 
+                        <td>9</td> 
+                        <td>10</td> 
+                        <td>11</td> 
+                        <td>12</td> 
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>14</td> 
+                        <td>15</td> 
+                        <td>16</td> 
+                        <td>17</td> 
+                        <td>18</td> 
+                        <td>19</td> 
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>21</td> 
+                        <td>22</td> 
+                        <td>23</td> 
+                        <td>24</td> 
+                        <td>25</td> 
+                        <td>26</td> 
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>28</td> 
+                        <td>29</td> 
+                        <td>30</td> 
+                        <td></td> 
+                        <td></td> 
+                        <td></td>
+                        <td></td>    
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="calendar">
+    <div class="month">
+        <h2>May</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td> 
+                    <td></td> 
+                    <td></td> 
+                    <td></td> 
+                    <td>1</td> 
+                    <td>2</td> 
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td> 
+                    <td>5</td> 
+                    <td>6</td> 
+                    <td>7</td> 
+                    <td>8</td> 
+                    <td>9</td> 
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>11</td> 
+                    <td>12</td> 
+                    <td>13</td> 
+                    <td>14</td> 
+                    <td>15</td> 
+                    <td>16</td> 
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>18</td> 
+                    <td>19</td> 
+                    <td>20</td> 
+                    <td>21</td> 
+                    <td>22</td> 
+                    <td>23</td> 
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>25</td> 
+                    <td>26</td> 
+                    <td>27</td> 
+                    <td>28</td> 
+                    <td>29</td> 
+                    <td>30</td>
+                    <td>31</td>    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+   </div>
+   <div class="calendar">
+
+<div class="month">
+    <h2>June</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td> 
+                <td>2</td> 
+                <td>3</td> 
+                <td>4</td> 
+                <td>5</td> 
+                <td>6</td> 
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td> 
+                <td>9</td> 
+                <td>10</td> 
+                <td>11</td> 
+                <td>12</td> 
+                <td>13</td> 
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>15</td> 
+                <td>16</td> 
+                <td>17</td> 
+                <td>18</td> 
+                <td>19</td> 
+                <td>20</td> 
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>22</td> 
+                <td>23</td> 
+                <td>24</td> 
+                <td>25</td> 
+                <td>26</td> 
+                <td>27</td> 
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>29</td> 
+                <td>30</td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td>
+                <td></td>    
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div class="calendar">
+    
+<div class="month">
+    <h2>July</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td> 
+                <td></td> 
+                <td>1</td> 
+                <td>2</td> 
+                <td>3</td> 
+                <td>4</td> 
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td> 
+                <td>7</td> 
+                <td>8</td> 
+                <td>9</td> 
+                <td>10</td> 
+                <td>11</td> 
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td> 
+                <td>14</td> 
+                <td>15</td> 
+                <td>16</td> 
+                <td>17</td> 
+                <td>18</td> 
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>20</td> 
+                <td>21</td> 
+                <td>22</td> 
+                <td>23</td> 
+                <td>24</td> 
+                <td>25</td> 
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>27</td> 
+                <td>28</td> 
+                <td>29</td> 
+                <td>30</td> 
+                <td>31</td> 
+                <td></td>
+                <td></td>    
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<div class="calendar">
+<div class="month">
+    <h2>August</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td>1</td> 
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td> 
+                <td>4</td> 
+                <td>5</td> 
+                <td>6</td> 
+                <td>7</td> 
+                <td>8</td> 
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>10</td> 
+                <td>11</td> 
+                <td>12</td> 
+                <td>13</td> 
+                <td>14</td> 
+                <td>15</td> 
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>17</td> 
+                <td>18</td> 
+                <td>19</td> 
+                <td>20</td> 
+                <td>21</td> 
+                <td>22</td> 
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>24</td> 
+                <td>25</td> 
+                <td>26</td> 
+                <td>27</td> 
+                <td>28</td> 
+                <td>29</td>
+                <td>30</td>    
+            </tr>
+                <td>31</td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td>
+                <td></td> 
+        </tbody>
+    </table>
+</div>
+</div>
+<div class="calendar">
+    <div class="month">
+        <h2>September</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td> 
+                    <td>1</td> 
+                    <td>2</td> 
+                    <td>3</td> 
+                    <td>4</td> 
+                    <td>5</td> 
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td> 
+                    <td>8</td> 
+                    <td>9</td> 
+                    <td>10</td> 
+                    <td>11</td> 
+                    <td>12</td> 
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>14</td> 
+                    <td>15</td> 
+                    <td>16</td> 
+                    <td>17</td> 
+                    <td>18</td> 
+                    <td>19</td> 
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>21</td> 
+                    <td>22</td> 
+                    <td>23</td> 
+                    <td>24</td> 
+                    <td>25</td> 
+                    <td>26</td> 
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>28</td> 
+                    <td>29</td> 
+                    <td>30</td> 
+                    <td></td> 
+                    <td></td> 
+                    <td></td>
+                    <td></td>    
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <div class="calendar">
+        <div class="month">
+            <h2>October</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td> 
+                        <td></td> 
+                        <td></td> 
+                        <td>1</td> 
+                        <td>2</td> 
+                        <td>3</td> 
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td> 
+                        <td>6</td> 
+                        <td>7</td> 
+                        <td>8</td> 
+                        <td>9</td> 
+                        <td>10</td> 
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>12</td> 
+                        <td>13</td> 
+                        <td>14</td> 
+                        <td>15</td> 
+                        <td>16</td> 
+                        <td>17</td> 
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td> 
+                        <td>20</td> 
+                        <td>21</td> 
+                        <td>22</td> 
+                        <td>23</td> 
+                        <td>24</td> 
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td> 
+                        <td>27</td> 
+                        <td>28</td> 
+                        <td>29</td> 
+                        <td>30</td> 
+                        <td>31</td>
+                        <td></td>    
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+        <div class="calendar">
+            <div class="month">
+                <h2>November</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td> 
+                            <td>3</td> 
+                            <td>4</td> 
+                            <td>5</td> 
+                            <td>6</td> 
+                            <td>7</td> 
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>9</td> 
+                            <td>10</td> 
+                            <td>11</td> 
+                            <td>12</td> 
+                            <td>13</td> 
+                            <td>14</td> 
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>16</td> 
+                            <td>17</td> 
+                            <td>18</td> 
+                            <td>19</td> 
+                            <td>20</td> 
+                            <td>21</td> 
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>23</td> 
+                            <td>24</td> 
+                            <td>25</td> 
+                            <td>26</td> 
+                            <td>27</td> 
+                            <td>28</td>
+                            <td>29</td>    
+                        </tr>
+                            <td>30</td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td>
+                            <td></td> 
+                    </tbody>
+                </table>
+            </div>
+            </div>
+            <div class="calendar">
+                <div class="month">
+                    <h2>December</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td> 
+                                <td>1</td> 
+                                <td>2</td> 
+                                <td>3</td> 
+                                <td>4</td> 
+                                <td>5</td> 
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>7</td> 
+                                <td>8</td> 
+                                <td>9</td> 
+                                <td>10</td> 
+                                <td>11</td> 
+                                <td>12</td> 
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <td>14</td> 
+                                <td>15</td> 
+                                <td>16</td> 
+                                <td>17</td> 
+                                <td>18</td> 
+                                <td>19</td> 
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>21</td> 
+                                <td>22</td> 
+                                <td>23</td> 
+                                <td>24</td> 
+                                <td>25</td> 
+                                <td>26</td> 
+                                <td>27</td>
+                            </tr>
+                            <tr>
+                                <td>28</td> 
+                                <td>29</td> 
+                                <td>30</td> 
+                                <td>31</td> 
+                                <td></td> 
+                                <td></td>
+                                <td></td>    
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+</body>
+</html>
